@@ -1,0 +1,23 @@
+/************************************
+          General
+************************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a   {
+  text-decoration: none;
+}
+
+
+
+
+#game {
+  width: 800px;
+  height: 700px;
+  border: solid 1px black;
+  margin: auto;
+  display: block;
+}
