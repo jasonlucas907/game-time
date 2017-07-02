@@ -163,13 +163,21 @@ body{
 }
 
 .life-count-txt {
-  font-size: 70px;
+  font-size: 60px;
   color: red;
   position: absolute;
   z-index: 100;
-  top: 810px;
+  top: 820px;
   right: 325px;
+}
 
+.point-count-txt {
+  font-size: 60px;
+  color: red;
+  position: absolute;
+  z-index: 100;
+  top: 820px;
+  right: 175px;
 
 }
 
