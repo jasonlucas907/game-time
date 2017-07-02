@@ -64,7 +64,9 @@ body{
 }
 
 .get-ready,
-.game-over-message  {
+.game-over-message,
+.level-up-message,
+.winner-message  {
   font-size: 80px;
   color: red;
   position: absolute;
