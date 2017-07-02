@@ -75,6 +75,24 @@ body{
   z-index: 1000;
 }
 
+.press-start-message  {
+  font-size: 80px;
+  color: red;
+  position: absolute;
+  top: 300px;
+  left: 272px;
+  z-index: 1000;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
 .background-video-container  {
   width: 100%;
   height: 100vh;
@@ -90,6 +108,20 @@ body{
   height: 100vh;
   object-fit: cover;
 }
+
+.game-holder-video-container  {
+  width: 900px;
+  height: 700px;
+  overflow: hidden;
+  position: absolute;
+  top: 255px;
+  left: 140px;
+  z-index: 99;
+}
+
+.game-holder-video  {
+  width: 930px;
+  position: absolute;
 
 .button-container {
   height: 75px;
@@ -119,6 +151,7 @@ body{
 }
 .instruction-btn {
   background-color: yellow;
+
 }
 
 /************************************
