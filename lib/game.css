@@ -41,12 +41,19 @@ body{
   z-index: 100;
 }
 
-.intro-video {
-  height: 520px;
+
+.intro-video-container  {
+  width: 900px;
+  height: 700px;
+  overflow: hidden;
   position: absolute;
-  top: 200px;
-  left: 150px;
-  z-index: 3;
+  top: 250px;
+  left: 140px;
+  z-index: 99;
+}
+
+.intro-video {
+  width: 970px;
 }
 
 .cloud-video-container  {
