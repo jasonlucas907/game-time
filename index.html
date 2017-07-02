@@ -10,6 +10,8 @@
 
   <main>
 
+
+
     <section class='background-video-container'>
       <video poster="assests/arcade-background.mp4" class='background-video' id="bgvid" playsinline autoplay muted loop>
           <source src="assests/arcade-background.mp4" type="video/webm">
@@ -23,6 +25,14 @@
           <source src="assests/snakes on a plane.mp4" type="video/webm">
           <source src="assests/snakes on a plane.mp4" type="video/mp4">
       </video> -->
+      <section class='game-holder-video-container'>
+        <video poster="assests/video-holder.mp4" class='game-holder-video' id="bgvid" playsinline autoplay muted loop>
+            <source src="assests/video-holder.mp4" type="video/webm">
+            <source src="assests/video-holder.mp4" type="video/mp4">
+        </video>
+        <p class='press-start-message'>Press Start!</p>
+      </section>
+
       <section class='cloud-video-container'>
         <video poster="assests/clouds.mp4" class='cloud-video' id="bgvid" playsinline autoplay muted loop>
             <source src="assests/clouds.mp4" type="video/webm">
@@ -36,33 +46,41 @@
   </main>
 
   <!-- audio files -->
-  <audio id='game-background-audio' autoplay loop>
-    <source src="assests/01 Send Me an Angel.m4a">
-  </audio>
+  <section class='audio-container'>
 
-  <audio id='gun-audio'>
-    <source src='assests/MP5_SMG-GunGuru-703432894.wav'>
-  </audio>
+    <audio id='game-intro-audio' autoplay loop>
+      <source src="assests/05 I'm Here to Kill Your Monster.m4a">
+    </audio>
 
-  <audio id='shot-snake-audio'>
-    <source src='assests/Scent1.wav'>
-  </audio>
+    <!-- <audio id='game-background-audio' autoplay loop>
+      <source src="assests/01 Send Me an Angel.m4a">
+    </audio> -->
 
-  <audio id='game-over-audio'>
-    <source src='assests/Friday7.wav'>
-  </audio>
+    <audio id='gun-audio'>
+      <source src='assests/MP5_SMG-GunGuru-703432894.wav'>
+    </audio>
 
-  <audio id='medic'>
-    <source src='assests/Medic.mp3'>
-  </audio>
+    <audio id='shot-snake-audio'>
+      <source src='assests/Scent1.wav'>
+    </audio>
 
-  <audio id='lock-and-load'>
-    <source src='assests/Lock-and-load.mp3'>
-  </audio>
+    <audio id='game-over-audio'>
+      <source src='assests/Friday7.wav'>
+    </audio>
 
-  <audio id='invaders-killed-audio'>
-    <source src='assests/Scent3.wav'>
-  </audio>
+    <audio id='medic'>
+      <source src='assests/Medic.mp3'>
+    </audio>
+
+    <audio id='lock-and-load'>
+      <source src='assests/Lock-and-load.mp3'>
+    </audio>
+
+    <audio id='invaders-killed-audio'>
+      <source src='assests/Scent3.wav'>
+    </audio>
+
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="main.bundle.js"></script>
