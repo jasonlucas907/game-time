@@ -39,8 +39,8 @@ body{
 .intro-video {
   height: 520px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 200px;
+  left: 150px;
   z-index: 3;
 }
 
