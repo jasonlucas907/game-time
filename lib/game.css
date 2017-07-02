@@ -91,6 +91,36 @@ body{
   object-fit: cover;
 }
 
+.button-container {
+  height: 75px;
+  width: 250px;
+  position: absolute;
+  z-index: 100;
+  top: 820px;
+  left: 490px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.btn {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: none;
+}
+
+.reset-btn {
+  background-color: red;
+}
+.start-btn {
+  background-color: blue;
+}
+.instruction-btn {
+  background-color: yellow;
+}
+
 /************************************
           Canvas
 ************************************/
