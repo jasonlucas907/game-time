@@ -1,3 +1,5 @@
+
+
 /************************************
           General
 ************************************/
@@ -12,6 +14,9 @@ a   {
 }
 
 body{
+  /*font-family: 'Audiowide', cursive;*/
+  font-family: 'VT323', monospace;
+  /*font-family: 'Press Start 2P', cursive;*/
   background: black;
 }
 
@@ -52,13 +57,23 @@ body{
   z-index: 1;
 }
 
+.get-ready,
+.game-over-message  {
+  font-size: 80px;
+  color: red;
+  position: absolute;
+  top: 400px;
+  left: 450px;
+  z-index: 1000;
+}
+
 
 /************************************
           Canvas
 ************************************/
 
 #game {
-  border: solid 4px purple;
+  /*border: solid 4px purple;*/
   position: absolute;
   top: 200px;
   left: 225px;

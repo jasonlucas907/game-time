@@ -3,34 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Space Invaders</title>
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Monoton|Press+Start+2P|VT323" rel="stylesheet">
   <link href='lib/game.css' rel='stylesheet'>
 </head>
 <body>
 
-    <!-- audio files -->
-    <audio autoplay loop>
-      <source src="assests/01 Send Me an Angel.m4a">
-    </audio>
-
-    <audio id='gun-audio'>
-      <source src='assests/MP5_SMG-GunGuru-703432894.wav'>
-    </audio>
-
-    <audio id='shot-snake-audio'>
-      <source src='assests/Scent1.wav'>
-    </audio>
-
-    <audio id='shot-snake-audio2'>
-      <source src='assests/Shit yeah.mp3'>
-    </audio>
-
-    <audio id='invaders-killed-audio'>
-      <source src='assests/Scent3.wav'>
-    </audio>
-
   <main>
 
     <section class='game-container'>
+      <!-- <p class='get-ready'>Get Ready!</p> -->
       <!-- <video poster="assests/snakes on a plane.mp4" class='intro-video' id="bgvid" playsinline autoplay>
           <source src="assests/snakes on a plane.mp4" type="video/webm">
           <source src="assests/snakes on a plane.mp4" type="video/mp4">
@@ -44,6 +25,35 @@
     </section>
 
   </main>
+
+  <!-- audio files -->
+  <audio id='game-background-audio' autoplay loop>
+    <source src="assests/01 Send Me an Angel.m4a">
+  </audio>
+
+  <audio id='gun-audio'>
+    <source src='assests/MP5_SMG-GunGuru-703432894.wav'>
+  </audio>
+
+  <audio id='shot-snake-audio'>
+    <source src='assests/Scent1.wav'>
+  </audio>
+
+  <audio id='game-over-audio'>
+    <source src='assests/Friday7.wav'>
+  </audio>
+
+  <audio id='medic'>
+    <source src='assests/Medic.mp3'>
+  </audio>
+
+  <audio id='lock-and-load'>
+    <source src='assests/Lock-and-load.mp3'>
+  </audio>
+
+  <audio id='invaders-killed-audio'>
+    <source src='assests/Scent3.wav'>
+  </audio>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="main.bundle.js"></script>
