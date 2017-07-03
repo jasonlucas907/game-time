@@ -154,19 +154,35 @@ body{
   border: none;
 }
 
+.btn:focus {
+  outline:none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
 /*** reset game button  ***/
 .reset-btn {
-  background-color: red;
+background-image: url('/Users/rgburnette3/1705-mod2/game-time/assests/001-play-button.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 565px;
 }
 
 /*** start game button  ***/
 .start-btn {
   background-color: blue;
+
+
 }
 
 /*** instructions game button  ***/
 .instruction-btn {
   background-color: yellow;
+
+
+
 }
 
 /*** player lives count display  ***/
