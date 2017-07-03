@@ -10,8 +10,7 @@
 
   <main>
 
-
-
+    <!--  background full overlay arcade video-->
     <section class='background-video-container'>
       <video poster="assests/arcade-background.mp4" class='background-video' id="bgvid" playsinline autoplay muted loop>
           <source src="assests/arcade-background.mp4" type="video/webm">
@@ -19,87 +18,72 @@
       </video>
     </section>
 
+    <!-- main centered container -->
     <section class='game-container'>
 
-
-      <!-- <section class='intro-video-container'>
-        <video poster="assests/snakes on a plane.mp4" class='intro-video' id="bgvid" playsinline autoplay>
-            <source src="assests/snakes on a plane.mp4" type="video/webm">
-            <source src="assests/snakes on a plane.mp4" type="video/mp4">
-        </video>
-      </section> -->
-
       <section class='game-holder-video-container'>
-
+        <!--  auto play preview video-->
         <video poster="assests/video-holder.mp4" class='game-holder-video' id="bgvid" playsinline autoplay muted loop>
             <source src="assests/video-holder.mp4" type="video/webm">
             <source src="assests/video-holder.mp4" type="video/mp4">
         </video>
         <p class='press-start-message'>Press Start!</p>
       </section>
-
+      <!--  cloud background video for game-->
       <section class='cloud-video-container'>
         <video poster="assests/clouds.mp4" class='cloud-video' id="bgvid" playsinline autoplay muted loop>
             <source src="assests/clouds.mp4" type="video/webm">
             <source src="assests/clouds.mp4" type="video/mp4">
         </video>
       </section>
-
+      <!--  arcade game graphic-->
       <img class='arcade-back' src='assests/the-arcade-background.png'/>
-
+      <!--  game canvas-->
       <canvas id="game" width="730" height="500"></canvas>
-
+      <!--  buttons: start, reset, instructions-->
       <section class="button-container">
         <button type="button" name="start-button" class="btn start-btn"></button>
         <button type="button" name="reset-button" class="btn reset-btn"></button>
         <button type="button" name="instruction-button" class="btn instruction-btn"></button>
       </section>
-
+      <!--  lives display-->
       <p class='life-count-txt'>3</p>
-
+      <!--  points display-->
       <p class='point-count-txt'>0</p>
-
+      <!--  level display-->
       <p class='level-display-txt'>level</p>
 
-
-
-
     </section>
-
 
   </main>
 
   <!-- audio files -->
   <section class='audio-container'>
-
+    <!-- default background audio music -->
     <audio id='game-intro-audio' autoplay loop>
       <source src="assests/05 I'm Here to Kill Your Monster.m4a">
     </audio>
-
-    <!-- <audio id='game-background-audio' autoplay loop>
-      <source src="assests/01 Send Me an Angel.m4a">
-    </audio> -->
-
+    <!--  player gun fire audio-->
     <audio id='gun-audio'>
       <source src='assests/MP5_SMG-GunGuru-703432894.wav'>
     </audio>
-
+    <!--  bullet to snake impact audio-->
     <audio id='shot-snake-audio'>
       <source src='assests/Scent1.wav'>
     </audio>
-
+    <!--  player dies game over audio-->
     <audio id='game-over-audio'>
       <source src='assests/Friday7.wav'>
     </audio>
-
+    <!--  player gets shot audio-->
     <audio id='medic'>
       <source src='assests/Medic.mp3'>
     </audio>
-
+    <!--  player get ready audio-->
     <audio id='lock-and-load'>
       <source src='assests/Lock-and-load.mp3'>
     </audio>
-
+    <!--  all invaders killed audio-->
     <audio id='invaders-killed-audio'>
       <source src='assests/Scent3.wav'>
     </audio>
