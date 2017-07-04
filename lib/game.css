@@ -138,12 +138,76 @@ body{
 .button-container {
   height: 75px;
   width: 250px;
-  position: absolute;
+  position: relative;
   z-index: 100;
-  top: 820px;
+  top: 812px;
   left: 490px;
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
+}
+
+.btn-con  {
+  display: inline-block;
+}
+
+.start-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.start-button-push {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.start-button-tag {
+  position: absolute;
+  top: 65px;
+  left: 16px;
+  color: red;
+}
+
+.restart-button {
+  position: absolute;
+  top: 0px;
+  left: 86px;
+}
+
+.restart-button-push {
+  position: absolute;
+  top: 0px;
+  left: 86px;
+  z-index: 1000;
+}
+
+.restart-button-tag {
+  position: absolute;
+  top: 65px;
+  left: 98px;
+  color: red;
+}
+
+.instruction-button {
+  position: absolute;
+  top: 0px;
+  left: 175px;
+}
+
+.instruction-button-push {
+  position: absolute;
+  top: 0px;
+  left: 175px;
+  z-index: 1000;
+}
+
+.instructions-button-tag {
+  position: absolute;
+  top: 65px;
+  left: 171px;
+  color: red;
 }
 
 /*** default button values  ***/
@@ -160,28 +224,6 @@ body{
 
 .btn:hover {
   cursor: pointer;
-}
-
-/*** reset game button  ***/
-.reset-btn {
-background-position: center;
-background-repeat: no-repeat;
-background-size: 565px;
-}
-
-/*** start game button  ***/
-.start-btn {
-  background-color: blue;
-
-
-}
-
-/*** instructions game button  ***/
-.instruction-btn {
-  background-color: yellow;
-
-
-
 }
 
 /*** player lives count display  ***/
