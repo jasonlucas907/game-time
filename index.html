@@ -21,8 +21,8 @@
     <!-- main centered container -->
     <section class='game-container'>
 
-      <section class='game-holder-video-container'>
-        <!--  auto play preview video-->
+      <section class='game-holder-video-container video-container'>
+        <!--  auto play initial video-->
         <video poster="assests/video-holder.mp4" class='game-holder-video' id="bgvid" playsinline autoplay muted loop>
             <source src="assests/video-holder.mp4" type="video/webm">
             <source src="assests/video-holder.mp4" type="video/mp4">
@@ -30,7 +30,7 @@
         <p class='press-start-message'>Press Start!</p>
       </section>
       <!--  cloud background video for game-->
-      <section class='cloud-video-container'>
+      <section class='cloud-video-container video-container'>
         <video poster="assests/clouds.mp4" class='cloud-video' id="bgvid" playsinline autoplay muted loop>
             <source src="assests/clouds.mp4" type="video/webm">
             <source src="assests/clouds.mp4" type="video/mp4">
@@ -56,11 +56,11 @@
         </div>
       </section>
       <!--  lives display-->
-      <p class='life-count-txt'>3</p>
+      <p class='life-count-txt counter-display'>3</p>
       <!--  points display-->
-      <p class='point-count-txt'>0</p>
+      <p class='point-count-txt counter-display'>0</p>
       <!--  level display-->
-      <p class='level-display-txt'>level</p>
+      <p class='level-display-txt counter-display'>level</p>
 
     </section>
 

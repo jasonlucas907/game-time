@@ -49,27 +49,154 @@ body{
 .arcade-back  {
   width: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
   z-index: 100;
 }
 
-/*** default auto play video ***/
-.game-holder-video-container  {
+/*** game buttons container ***/
+.button-container {
+  height: 75px;
+  width: 250px;
+  position: relative;
+  z-index: 100;
+  top: 812px;
+  left: 490px;
+}
+
+/*** individual button container ***/
+.btn-con  {
+  display: inline-block;
+}
+
+.start-button {
+}
+
+.start-button-push {
+  z-index: 1000;
+}
+
+.start-button-tag {
+  left: 16px;
+}
+
+.restart-button {
+  left: 86px;
+}
+
+.restart-button-push {
+  left: 86px;
+  z-index: 1000;
+}
+
+.restart-button-tag {
+  left: 98px;
+}
+
+.instruction-button {
+  left: 175px;
+}
+
+.instruction-button-push {
+  left: 175px;
+  z-index: 1000;
+}
+
+.instructions-button-tag {
+  left: 171px;
+}
+
+/*** default button values  ***/
+.btn {
+  position: absolute;
+
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: none;
+  top: 0;
+}
+
+.button-label  {
+  position: absolute;
+  top: 65px;
+  color: red;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/*** player lives count display  ***/
+.counter-display  {
+  font-size: 60px;
+  color: red;
+  position: absolute;
+  z-index: 100;
+  top: 820px;
+}
+
+.life-count-txt {
+  right: 325px;
+}
+
+/*** player points count display  ***/
+.point-count-txt {
+  right: 154px;
+}
+
+/*** player level count display  ***/
+.level-display-txt {
+  font-size: 30px;
+  top: 750px;
+  right: 225px;
+}
+
+/*** video section ***/
+
+/*** holds videos overflow is hidden to resize ***/
+.video-container  {
   width: 900px;
   height: 700px;
   overflow: hidden;
   position: absolute;
-  top: 255px;
   left: 140px;
   z-index: 99;
 }
 
+/*** video holder section ***/
+/*** append videos to this section ***/
+.game-holder-video-container  {
+  top: 255px;
+}
+
+/*** default auto play video when open site or restart***/
 .game-holder-video  {
   width: 930px;
   position: absolute;
 }
 
+/*** game robbie intro video & instruction video ***/
+/*** js appended  ***/
+.intro-video-container  {
+  top: 250px;
+}
+
+.intro-video {
+  width: 970px;
+}
+
+/*** game background cloud video ***/
+.cloud-video-container  {
+  top: 250px;
+  left: 147px;
+  z-index: 1;
+}
+
+.cloud-video {
+  width: 1000px;
+}
+
+
+/*** game start mesage overlay game holder video ***/
 .press-start-message  {
   font-size: 80px;
   color: red;
@@ -88,37 +215,6 @@ body{
   to { opacity: 0.0; }
 }
 
-/*** game intro video  ***/
-/*** js appended  ***/
-.intro-video-container  {
-  width: 900px;
-  height: 700px;
-  overflow: hidden;
-  position: absolute;
-  top: 250px;
-  left: 140px;
-  z-index: 99;
-}
-
-.intro-video {
-  width: 970px;
-}
-
-/*** game background cloud video ***/
-.cloud-video-container  {
-  width: 900px;
-  height: 700px;
-  overflow: hidden;
-  position: absolute;
-  top: 250px;
-  left: 147px;
-  z-index: 1;
-}
-
-.cloud-video {
-  width: 1000px;
-}
-
 /*** game text messages js appended***/
 /*** default message centered on screen ***/
 /*** js appended  ***/
@@ -132,128 +228,6 @@ body{
   top: 400px;
   left: 450px;
   z-index: 1000;
-}
-
-/*** button container ***/
-.button-container {
-  height: 75px;
-  width: 250px;
-  position: relative;
-  z-index: 100;
-  top: 812px;
-  left: 490px;
-  /*display: flex;
-  justify-content: space-between;*/
-}
-
-.btn-con  {
-  display: inline-block;
-}
-
-.start-button {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.start-button-push {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-}
-
-.start-button-tag {
-  position: absolute;
-  top: 65px;
-  left: 16px;
-  color: red;
-}
-
-.restart-button {
-  position: absolute;
-  top: 0px;
-  left: 86px;
-}
-
-.restart-button-push {
-  position: absolute;
-  top: 0px;
-  left: 86px;
-  z-index: 1000;
-}
-
-.restart-button-tag {
-  position: absolute;
-  top: 65px;
-  left: 98px;
-  color: red;
-}
-
-.instruction-button {
-  position: absolute;
-  top: 0px;
-  left: 175px;
-}
-
-.instruction-button-push {
-  position: absolute;
-  top: 0px;
-  left: 175px;
-  z-index: 1000;
-}
-
-.instructions-button-tag {
-  position: absolute;
-  top: 65px;
-  left: 171px;
-  color: red;
-}
-
-/*** default button values  ***/
-.btn {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  border: none;
-}
-
-.btn:focus {
-  outline:none;
-}
-
-.btn:hover {
-  cursor: pointer;
-}
-
-/*** player lives count display  ***/
-.life-count-txt {
-  font-size: 60px;
-  color: red;
-  position: absolute;
-  z-index: 100;
-  top: 820px;
-  right: 325px;
-}
-
-/*** player points count display  ***/
-.point-count-txt {
-  font-size: 60px;
-  color: red;
-  position: absolute;
-  z-index: 100;
-  top: 820px;
-  right: 154px;
-}
-
-/*** player level count display  ***/
-.level-display-txt {
-  font-size: 30px;
-  color: red;
-  position: absolute;
-  z-index: 100;
-  top: 750px;
-  right: 225px;
 }
 
 
