@@ -1,11 +1,12 @@
 var { expect } = require('chai');
+var { assert } = require('chai');
 var Bullet = require('../lib/bullet.js');
 
 
-  describe('Bullet', function() {
+  describe('Bullet test', () => {
   let bullet;
 
-  beforeEach(function () {
+  beforeEach(() => {
     bullet = new Bullet();
   })
 
@@ -14,9 +15,13 @@ var Bullet = require('../lib/bullet.js');
   })
 
   it('should have an X and Y coordinate', () => {
-    // let bullet = new Bullet(x + 35, y - 15)
+    let bullet = new Bullet('x' + 35, 'y' - 15)
     expect(bullet.x).to.equal(bullet.x + 35);
     expect(bullet.y).to.equal(bullet.y - 15);
+  })
+
+  it('should fire upwards at evil snakes', () => {
+    expect(bullet.velocity).to.equal(-5)
   })
 
   it('should have a size', () => {
@@ -24,30 +29,16 @@ var Bullet = require('../lib/bullet.js');
     expect(bullet.height).to.equal(30);
   })
 
-  it('should fire upwards at evil snakes', () => {
-    expect(bullet.velocity).to.equal(-5)
+
+  it('should move on the canvas', () => {
+    assert.isFunction(bullet.moveBullet);
+  });
+
+  it('should be able to draw itself on the canvas', () => {
+    assert.isFunction(bullet.draw(context))
+  })
   })
 
-
-})
-
-// describe ('Bullet', () => {
-//   let bullet = new Bullet ();
-//
-//   it('should be a function', () => {
-//     expect(Bullet(Bullet);
-//   })
-//
-//   it('should create an instance of Bullet', () => {
-//     const bullet = new Bullet ();
-//   })
-//
-//   it('should have an X position', () =>{
-//     const bullet = new Bullet (x);
-//     expect.toEqual(bullet)
-//   })
-//
-//
-//
-//
-// })
+  // it('should draw itself on the canvas', () => {
+  //   assert.isFunction(Bullet.drawImage);
+  // });
