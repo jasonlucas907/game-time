@@ -37,7 +37,11 @@ body{
   object-fit: cover;
 }
 
-/*** centered game container ***/
+
+/************************************
+    The game centered container
+************************************/
+
 /*** everything is built inside this ***/
 .game-container {
   width: 1200px;
@@ -51,6 +55,11 @@ body{
   position: absolute;
   z-index: 100;
 }
+
+
+/************************************
+          Buttons
+************************************/
 
 /*** game buttons container ***/
 .button-container {
@@ -125,6 +134,11 @@ body{
   cursor: pointer;
 }
 
+
+/************************************
+        Player status displays
+************************************/
+
 /*** player lives count display  ***/
 .counter-display  {
   font-size: 60px;
@@ -150,7 +164,10 @@ body{
   right: 225px;
 }
 
-/*** video section ***/
+
+/************************************
+          Videos
+************************************/
 
 /*** holds videos overflow is hidden to resize ***/
 .video-container  {
@@ -195,6 +212,10 @@ body{
   width: 1000px;
 }
 
+
+/************************************
+     Appended game messages
+************************************/
 
 /*** game start mesage overlay game holder video ***/
 .press-start-message  {
