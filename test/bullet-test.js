@@ -1,6 +1,6 @@
-var { expect } = require('chai');
-var { assert } = require('chai');
-var Bullet = require('../lib/bullet.js');
+const { expect } = require('chai');
+const { assert } = require('chai');
+const Bullet = require('../lib/bullet.js');
 
 
 describe('Bullet test', () => {
@@ -22,7 +22,9 @@ describe('Bullet test', () => {
   })
 
   it('should fire upwards at evil snakes', () => {
-    expect(bullet.velocity).to.equal(-5)
+    new Bullet(25, 25, -5, 30, 30);
+    bullet.moveBullet();
+    expect(bullet.velocity).to.equal(-5);
   })
 
   it('should have a size', () => {
@@ -30,16 +32,4 @@ describe('Bullet test', () => {
     expect(bullet.height).to.equal(30);
   })
 
-
-  it('should move on the canvas', () => {
-    assert.isFunction(bullet.moveBullet);
-  });
-
-  it.skip('should be able to draw itself on the canvas', () => {
-    assert.isFunction(bullet.draw(context))
-  })
 })
-
-  // it('should draw itself on the canvas', () => {
-  //   assert.isFunction(Bullet.drawImage);
-  // });

@@ -1,6 +1,6 @@
-var { expect } = require('chai');
-var { assert } = require('chai');
-var Player = require('../lib/player.js');
+const { expect } = require('chai');
+const { assert } = require('chai');
+const Player = require('../lib/player.js');
 
 describe('Player test', () => {
   let player;
