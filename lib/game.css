@@ -76,9 +76,6 @@ body{
   display: inline-block;
 }
 
-.start-button {
-}
-
 .start-button-push {
   z-index: 1000;
 }
@@ -116,7 +113,6 @@ body{
 /*** default button values  ***/
 .btn {
   position: absolute;
-
   height: 65px;
   width: 65px;
   border-radius: 50%;
