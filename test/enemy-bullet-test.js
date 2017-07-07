@@ -1,5 +1,4 @@
 var { expect } = require('chai');
-var { assert } = require('chai');
 var EnemyBullet = require('../lib/enemy-bullet.js');
 
 
