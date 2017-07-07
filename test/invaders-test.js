@@ -1,6 +1,8 @@
-var { expect } = require('chai');
-var { assert } = require('chai');
-var Invaders = require('../lib/invaders.js');
+let { expect } = require('chai');
+let { assert } = require('chai');
+
+let Invaders = require('../lib/invaders.js');
+
 
 
 describe('Invaders test', () => {

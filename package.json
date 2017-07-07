@@ -24,6 +24,7 @@
     "babel-loader": "^6.2.7",
     "chai": "^3.5.0",
     "css-loader": "^0.26.0",
+    "ignore-loader": "^0.1.2",
     "mocha": "^3.1.2",
     "mocha-loader": "^1.0.0",
     "node-libs-browser": "^1.0.0",
