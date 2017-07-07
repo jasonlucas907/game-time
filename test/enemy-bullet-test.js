@@ -3,7 +3,7 @@ var { assert } = require('chai');
 var EnemyBullet = require('../lib/enemy-bullet.js');
 
 
-  describe('EnemyBullet test', () => {
+describe('EnemyBullet test', () => {
   let enemybullet;
 
   beforeEach(() => {
@@ -20,6 +20,7 @@ var EnemyBullet = require('../lib/enemy-bullet.js');
   })
 
   it('should have a default velocity of 5', () => {
+
     expect(enemybullet.velocity).to.equal(5)
   })
 
@@ -28,7 +29,9 @@ var EnemyBullet = require('../lib/enemy-bullet.js');
     expect(enemybullet.height).to.equal(20)
   })
 
-  it('should have a function to move on the canvas', () => {
-    assert.isFunction(enemybullet.moveEnemyBullet)
+  it('should have a function to shoot down the plane', () => {
+    enemybullet.moveEnemyBullet();
+    expect(enemybullet.velocity).to.equal(5);
+
   })
-  })
+})

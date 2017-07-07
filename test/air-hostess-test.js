@@ -1,6 +1,6 @@
-let { expect } = require('chai');
-let { assert } = require('chai');
-let AirHostess = require('../lib/air-hostess.js');
+const { expect } = require('chai');
+const { assert } = require('chai');
+const AirHostess = require('../lib/air-hostess.js');
 
 describe('AirHostess test', () => {
   let airhostess
