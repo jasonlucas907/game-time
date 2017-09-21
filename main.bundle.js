@@ -314,7 +314,7 @@
 	  //  update player status displays
 	  game1.displayLifeCount();
 	  game1.pointsCounter();
-	  game1.levelDisplay();
+	  game1.displayLevel();
 
 	  //  run the game loop
 	  requestAnimationFrame(gameLoop);
@@ -779,7 +779,7 @@
 
 	class Game {
 	  constructor() {
-	    this.player1 = new Player(), this.points = 0, this.theInvaderCounter = 27, this.bullets = [], this.enemyBullets = [], this.airHostessArray = [], this.invaderRow1 = [], this.invaderRow2 = [], this.invaderRow3 = [], this.level = 1, this.displayLevel = 1, this.invaderLevelSpeed = 2, this.lives = 3, this.randomFireLevel = 1;
+	    this.player1 = new Player(), this.points = 0, this.theInvaderCounter = 27, this.bullets = [], this.enemyBullets = [], this.airHostessArray = [], this.invaderRow1 = [], this.invaderRow2 = [], this.invaderRow3 = [], this.level = 1, this.levelDisplay = 1, this.invaderLevelSpeed = 2, this.lives = 3, this.randomFireLevel = 1;
 	  }
 
 	  // monitor if bullet has hit an invader
@@ -1116,7 +1116,7 @@
 	  }
 	  //
 	  // //  display player level
-	  levelDisplay() {
+	  displayLevel() {
 	    $('.level-display-txt').text('level ' + this.levelDisplay);
 	  }
 
