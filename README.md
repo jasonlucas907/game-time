@@ -26,7 +26,7 @@ Move Right - Right Arrow Key
 Jason Lucas
 Ralph Burnette
 
-## Original Assignment - Turing MOD4
+## Original Assignment - Turing MOD2
 
 Build a game that is playable in the browser.
 
