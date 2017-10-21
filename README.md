@@ -20,6 +20,7 @@ Move Right - Right Arrow Key
 * JQuery
 * CSS
 * HTML
+* HTML Canvas
 
 ## Contributors
 
